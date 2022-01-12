@@ -1,3 +1,7 @@
+body {
+  font-family: courier, helvetica, sans-serif;
+}
+
 #board {
   padding-top: 3em;
   text-align: center;
@@ -7,6 +11,8 @@
   float: left;
   height: 100px;
   width: 100px;
+  line-height: 100px;
+  font-size: 75px;
 }
 
 .row {
@@ -29,4 +35,14 @@
 
 .right {
   border-left: 1px darkseagreen solid;
+}
+
+button {
+  position: absolute;
+  bottom: 20%;
+  left: 48%;
+}
+
+#winner {
+  font-size: 30px;
 }
