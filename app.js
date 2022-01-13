@@ -13,7 +13,6 @@ const prompts = [
   "Now's your chance",
 ];
 start();
-console.log("start");
 
 function start() {
   for (let i = 0; i < cells.length; i++) {
@@ -35,7 +34,6 @@ function cellClicked() {
       player = 0;
     }
     checkWin();
-    console.log("check");
   }
 }
 
@@ -67,7 +65,6 @@ function checkWin() {
       cells[6].textContent === "X")
   ) {
     document.getElementById("winner").textContent = "X wins!";
-    console.log("x win");
   } else if (
     (cells[0].textContent === "O" &&
       cells[1].textContent === "O" &&
@@ -113,9 +110,7 @@ function checkWin() {
     document.getElementById("winner").textContent === "O wins!" ||
     document.getElementById("winner").textContent === "Draw!"
   ) {
-    console.log("game over");
     window.addEventListener("click", clearBoard, true);
-    console.log("clear");
   }
 }
 
@@ -127,9 +122,6 @@ function clearBoard() {
 
   player = 0;
   document.getElementById("winner").textContent = "Your turn, X";
-  console.log("cleared");
   window.removeEventListener("click", clearBoard, true);
-
   start();
-  console.log("start bottom");
 }
