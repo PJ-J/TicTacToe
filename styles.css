@@ -15,6 +15,7 @@ body {
   line-height: 100px;
   font-size: 75px;
   color: #A4B0FF;
+  border-radius: 10px;
 }
 
 .row {
