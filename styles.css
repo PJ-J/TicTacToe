@@ -16,6 +16,7 @@ body {
   font-size: 75px;
   color: #A4B0FF;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .row {
